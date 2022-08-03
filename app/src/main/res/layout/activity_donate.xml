@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="160dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/profile_picture_descripter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grover_old" />
+
+    <TextView
+        android:id="@+id/textView_fname_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="41dp"
+        android:text="@string/DonateActivity_Fname_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_phone_title"
+        app:layout_constraintStart_toStartOf="@+id/textView_phone_title"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/editText_fname"
+        android:layout_width="220dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:ems="10"
+        android:hint="@string/DonateActivity_Fname"
+        android:inputType="textPersonName"
+        android:textColorHint="#757575"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_fname_title"
+        app:layout_constraintStart_toEndOf="@+id/textView_fname_title" />
+
+    <TextView
+        android:id="@+id/textView_phone_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="@string/DonateActivity_Phone_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_creditcard_title"
+        app:layout_constraintStart_toStartOf="@+id/textView_creditcard_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fname_title" />
+
+    <TextView
+        android:id="@+id/textView_creditcard_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="@string/DonateActivity_Creditcard_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_cvc_title"
+        app:layout_constraintStart_toStartOf="@+id/textView_cvc_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phone_title" />
+
+    <TextView
+        android:id="@+id/textView_cvc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="@string/DonateActivity_CVC_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_amount_title"
+        app:layout_constraintStart_toStartOf="@+id/textView_amount_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_creditcard_title" />
+
+    <TextView
+        android:id="@+id/textView_amount_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:text="@string/DonateActivity_Amount_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_receipt_title"
+        app:layout_constraintStart_toStartOf="@+id/textView_receipt_title"
+        app:layout_constraintTop_toBottomOf="@+id/textView_cvc_title" />
+
+    <TextView
+        android:id="@+id/textView_receipt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/DonateActivity_Receipt_title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button_Donate1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_amount_title" />
+
+    <Button
+        android:id="@+id/button_Donate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/DonateActivity_Donate_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_cvc"
+        android:layout_width="86dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="84dp"
+        android:ems="10"
+        android:hint="@string/DonateActivity_CVC"
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColorHint="#757575"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_cvc_title"
+        app:layout_constraintStart_toEndOf="@+id/textView_cvc_title" />
+
+    <EditText
+        android:id="@+id/editText_creditcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:hint="@string/DonateActivity_Creditcard"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_creditcard_title"
+        app:layout_constraintStart_toEndOf="@+id/textView_creditcard_title" />
+
+    <EditText
+        android:id="@+id/editText_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:ems="10"
+        android:hint="@string/DonateActivity_Amount"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_amount_title"
+        app:layout_constraintStart_toEndOf="@+id/textView_amount_title" />
+
+    <Switch
+        android:id="@+id/switch_receipt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_receipt_title"
+        app:layout_constraintStart_toEndOf="@+id/textView_receipt_title" />
+
+    <EditText
+        android:id="@+id/editText_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:ems="10"
+        android:hint="@string/DonateActivity_Phone"
+        android:inputType="phone"
+        android:maxLength="8"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView_phone_title"
+        app:layout_constraintStart_toEndOf="@+id/textView_phone_title" />
+</androidx.constraintlayout.widget.ConstraintLayout>

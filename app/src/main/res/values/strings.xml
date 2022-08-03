@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">LovGroverApp</string>
+    <string name="profile_picture_descripter">Profile Picture</string>
+    <string name="flag_descripter">Profile Picture</string>
+
+    <string name="HomeActivity_Name_title">Name: </string>
+    <string name="HomeActivity_Name">Lov Grover</string>
+    <string name="HomeActivity_Born_title">Born: </string>
+    <string name="HomeActivity_Born_date">January 1, 1961</string>
+    <string name="HomeActivity_Born">(Meerut, Uttar Pradesh, India)</string>
+    <string name="HomeActivity_Age_title">Age: </string>
+    <string name="HomeActivity_Age">61 years old</string>
+    <string name="HomeActivity_Location_title">Location: </string>
+    <string name="HomeActivity_Location">Bell Laboratories, NJ</string>
+    <string name="HomeActivity_Nationality_title">Nationality: </string>
+    <string name="HomeActivity_Nationality">Indian American</string>
+    <string name="HomeActivity_Biography_title">Bio: </string>
+    <string name="HomeActivity_Biography">Lov Grover is an Indian American computer scientist known for developing the Grover’s algorithm, one of the most efficient quantum search algorithms. He was born in Meerut, Uttar Pradesh, India in 1961 and completed his higher education in Electrical Engineering, He published his research paper in 1996 with his algorithm.</string>
+    <string name="HomeActivity_Button_Bio">Biography</string>
+    <string name="HomeActivity_Button_Info">More Info</string>
+    <string name="HomeActivity_Button_Donate">Donate</string>
+
+    <string name="BiographyActivity_Earlylife_title">Early Life</string>
+    <string name="BiographyActivity_Earlylife">Lov Grover was born in the Meerut district of Uttar Pradesh, India in 1961. He received his undergraduate education from the Indian Institute of Technology in Electrical Engineering in 1981.</string>
+    <string name="BiographyActivity_Education_title">Education</string>
+    <string name="BiographyActivity_Education">He completed his master’s degree in Electrical Engineering from Caltech and Physics from Stanford and gained his PhD from Stanford. In his doctorate proposal, he published a paper on new concepts in free electron lasers.</string>
+    <string name="BiographyActivity_Accomplishment_title">Accomplishment</string>
+    <string name="BiographyActivity_Accomplishment">Grover started working at Bell Laboratories in 1984 as a member of technical staff on computer-aided design. He implemented a VLSI CAD system during his work there which helped produce several thousands of AT&#38;T commercial chips. He published his paper, a fast quantum mechanical algorithm for database search, in 1996 at the Symposium on the Theory of Computing. He introduced the grover’s algorithm in the paper, which can search an unstructured database with a complexity of O(√N) as compared to the classical O(N) complexity.</string>
+    <string name="BiographyActivity_Earlylife_image">Grover early</string>
+    <string name="BiographyActivity_Education_image">Grover education</string>
+    <string name="BiographyActivity_Accomplishment_image">Grover accomplishment</string>
+
+    <string name="DonateActivity_Fname_title">Full name: </string>
+    <string name="DonateActivity_Fname">ex. Omer Sajid</string>
+    <string name="DonateActivity_Phone_title">Phone #: </string>
+    <string name="DonateActivity_Phone">ex. 12345678</string>
+    <string name="DonateActivity_Creditcard_title">Credit Card #: </string>
+    <string name="DonateActivity_Creditcard">XXXX-XXXX-XXXX-XXXX</string>
+    <string name="DonateActivity_CVC_title">CVC: </string>
+    <string name="DonateActivity_CVC">ex. 123</string>
+    <string name="DonateActivity_Amount_title">Amount: </string>
+    <string name="DonateActivity_Amount">ex. 5.0</string>
+    <string name="DonateActivity_Receipt_title">Receive Receipt: </string>
+    <string name="DonateActivity_Donate_button">Donate</string>
+
+
+
+</resources>

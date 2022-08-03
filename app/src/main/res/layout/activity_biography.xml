@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".BiographyActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/divider_Earlylife"
+            android:layout_width="400dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="450dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_Earlylife_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/BiographyActivity_Earlylife_title"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_Education_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/BiographyActivity_Education_title"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_Earlylife" />
+
+        <TextView
+            android:id="@+id/textView_Accomplishment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/BiographyActivity_Accomplishment_title"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_Education" />
+
+        <TextView
+            android:id="@+id/textView_Earlylife"
+            android:layout_width="286dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/BiographyActivity_Earlylife"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Earlylife_title" />
+
+        <TextView
+            android:id="@+id/textView_Education"
+            android:layout_width="286dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/BiographyActivity_Education"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Education_title" />
+
+        <TextView
+            android:id="@+id/textView_Accomplishment_title"
+            android:layout_width="286dp"
+            android:layout_height="221dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/BiographyActivity_Accomplishment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Accomplishment" />
+
+        <ImageView
+            android:id="@+id/imageView_Earlylife"
+            android:layout_width="186dp"
+            android:layout_height="174dp"
+            android:contentDescription="@string/BiographyActivity_Earlylife_image"
+            app:layout_constraintBottom_toTopOf="@+id/divider_Earlylife"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Earlylife"
+            app:srcCompat="@drawable/download" />
+
+        <ImageView
+            android:id="@+id/imageView_Education"
+            android:layout_width="206dp"
+            android:layout_height="210dp"
+            android:contentDescription="@string/BiographyActivity_Education_image"
+            app:layout_constraintBottom_toTopOf="@+id/divider_Education"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Education"
+            app:layout_constraintVertical_bias=".5"
+            app:srcCompat="@drawable/grover_mid" />
+
+        <View
+            android:id="@+id/divider_Education"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="475dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_Earlylife" />
+
+        <View
+            android:id="@+id/divider_Accomplishment"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="550dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_Education" />
+
+        <ImageView
+            android:id="@+id/imageView_Accomplishment"
+            android:layout_width="236dp"
+            android:layout_height="176dp"
+            android:contentDescription="@string/BiographyActivity_Accomplishment_image"
+            app:layout_constraintBottom_toTopOf="@+id/divider_Accomplishment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_Accomplishment_title"
+            app:srcCompat="@drawable/grover" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
